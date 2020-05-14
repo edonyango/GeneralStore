@@ -29,5 +29,10 @@ public class ProductsPage {
 	@AndroidFindBy(className="android.widget.LinearLayout")
 	public List<AndroidElement> productsLayout;
 	
+	@AndroidFindBy(id="com.androidsample.generalstore:id/counterText")
+	public AndroidElement numOfCartPrdcts;
+	
+	@AndroidFindBy(xpath="//android.widget.Toast[1]")
+	public AndroidElement toastMsg;
 
 }

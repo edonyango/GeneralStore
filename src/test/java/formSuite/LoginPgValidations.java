@@ -27,6 +27,7 @@ public class LoginPgValidations extends Base {
 	
 	@Test
 	public void validateHomePg() throws IOException, InterruptedException {
+		//Check if launching app leads to "General Store" page
 		service = startServer();
 		AndroidDriver<AndroidElement> driver = Capabilities();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -38,6 +39,7 @@ public class LoginPgValidations extends Base {
 	
 	@Test
 	public void loginWoName() throws IOException, InterruptedException {
+		//Check if a toast message is displayed when login without name
 		service = startServer();
 		AndroidDriver<AndroidElement> driver = Capabilities();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -56,6 +58,7 @@ public class LoginPgValidations extends Base {
 	
 	@Test
 	public void exitAppMessage () throws IOException, InterruptedException {
+		//check if exit app toast appears when BACK button is clicked
 		service = startServer();
 		AndroidDriver<AndroidElement> driver = Capabilities();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

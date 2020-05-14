@@ -12,5 +12,13 @@ public class TestData {
 		};
 		return name;
 	}
+	
+	@DataProvider(name="apkProducts")
+	public Object[][] getProductData(){
+		Object product [][] = new Object[][] {
+			{"Converse All Star","Jordan 6 Rings"}
+		};
+		return product;
+	}
 
 }

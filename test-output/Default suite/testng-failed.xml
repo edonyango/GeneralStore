@@ -5,8 +5,8 @@
     <classes>
       <class name="formSuite.TestMethods">
         <methods>
+          <include name="completePurchase"/>
           <include name="killAllNodes"/>
-          <include name="exitAppMessage"/>
         </methods>
       </class> <!-- formSuite.TestMethods -->
     </classes>

@@ -32,5 +32,11 @@ public class CartPage {
 	@AndroidFindBy(id="com.androidsample.generalstore:id/btnProceed")
 	public AndroidElement visitWebsiteBtn;
 	
+	@AndroidFindBy(id="com.androidsample.generalstore:id/termsButton")
+	public AndroidElement tOCButton;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='CLOSE']")
+	public AndroidElement tOCClose;
+	
 
 }

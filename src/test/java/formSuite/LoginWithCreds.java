@@ -18,7 +18,7 @@ public class LoginWithCreds extends Base {
 	
 	@Test(dataProvider="apkUsername", dataProviderClass=TestData.class)
 	public void loginCreds(String name) throws IOException, InterruptedException {
-		//start server
+		//Enter 3 sets of name "digits","special characters","characters"
 		service = startServer();
 		AndroidDriver<AndroidElement> driver = Capabilities();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
