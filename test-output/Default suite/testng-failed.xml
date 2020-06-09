@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="formSuite.TestMethods">
+      <class name="formSuite.LoginWithCreds">
         <methods>
-          <include name="completePurchase"/>
-          <include name="killAllNodes"/>
+          <include name="loginCreds" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- formSuite.TestMethods -->
+      </class> <!-- formSuite.LoginWithCreds -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

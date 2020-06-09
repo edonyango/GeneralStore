@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\eonyango\AppData\Local\Temp\testng-eclipse-1733067621\testng-customsuite.xml</span>
+                    <span>C:\Users\eonyango\AppData\Local\Temp\testng-eclipse-1123291026\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="formSuite.TestMethods" hash-for-method="completePurchase">completePurchase</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="formSuite.LoginWithCreds" hash-for-method="loginCreds(34413)">loginCreds(34413)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="formSuite.LoginWithCreds" hash-for-method="loginCreds(@#$%&amp;)">loginCreds(@#$%&)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="formSuite.LoginWithCreds" hash-for-method="loginCreds(Eddie)">loginCreds(Eddie)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +130,31 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">formSuite.TestMethods</span>
+              <span class="class-name">formSuite.LoginWithCreds</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="completePurchase">
-                  </a> <!-- completePurchase -->
-                  <span class="method-name">completePurchase</span>
+                  <a name="loginCreds(34413)">
+                  </a> <!-- loginCreds(34413) -->
+                  <span class="method-name">loginCreds</span>
+                  <span class="parameters">(34413)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCreds(@#$%&amp;)">
+                  </a> <!-- loginCreds(@#$%&) -->
+                  <span class="method-name">loginCreds</span>
+                  <span class="parameters">(@#$%&)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCreds(Eddie)">
+                  </a> <!-- loginCreds(Eddie) -->
+                  <span class="method-name">loginCreds</span>
+                  <span class="parameters">(Eddie)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +162,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\eonyango\AppData\Local\Temp\testng-eclipse-1733067621\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\eonyango\AppData\Local\Temp\testng-eclipse-1123291026\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +171,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;formSuite.TestMethods&quot;/&gt;
+      &lt;class name=&quot;formSuite.LoginWithCreds&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -184,16 +211,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'completePurchase')
-data.setCell(0, 2, 'formSuite.TestMethods')
-data.setCell(0, 3, 28250);
+data.setCell(0, 1, 'loginCreds')
+data.setCell(0, 2, 'formSuite.LoginWithCreds')
+data.setCell(0, 3, 29076);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginCreds')
+data.setCell(1, 2, 'formSuite.LoginWithCreds')
+data.setCell(1, 3, 28576);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginCreds')
+data.setCell(2, 2, 'formSuite.LoginWithCreds')
+data.setCell(2, 3, 27691);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -219,14 +254,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">formSuite.TestMethods</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">killAllNodes</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">formSuite.LoginWithCreds</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">completePurchase</span>
-                <span class="method-start">3012 ms</span>
+                <span class="method-name">loginCreds(Eddie)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginCreds(34413)</span>
+                <span class="method-start">29083 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginCreds(@#$%&)</span>
+                <span class="method-start">57661 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
