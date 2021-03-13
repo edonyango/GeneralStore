@@ -37,7 +37,6 @@ public class LoginWithCreds extends Base {
 		//Confirm if clicking the let's shop button redirects the user to products page
 		Assert.assertEquals("Products", prdctsPgTitle);
 		//stop server
-		service.stop();
-		
+		service.stop();		
 	}
 }
