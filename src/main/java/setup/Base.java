@@ -63,16 +63,16 @@ public class Base {
 		File apk = new File(appDirectory, (String) projectProp.get("appName"));
 		//Get device name from properties
 		String device = (String) projectProp.getProperty("deviceName");
-		/*
-		 * if (device.contains("emulator")) { startEmulator(); }
-		 */
+		
+		  if (device.contains("emulator")) { startEmulator(); }
+		 
 		//Declare desired capabilities
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 		cap.setCapability(MobileCapabilityType.APP, apk.getAbsolutePath());
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, device);
 		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 10);
-		cap.setCapability("chromedriverExecutable", "C:\\Program Files\\webdrivers\\chromedriver74.exe");
+		cap.setCapability("chromedriverExecutable", "C:\\Program Files\\Webdrivers\\chromedriver74.exe");
 		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 		return driver;
 	}
